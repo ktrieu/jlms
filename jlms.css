@@ -2,6 +2,7 @@ body {
   font-family: "Public Sans", sans-serif;
   color: #2e2c2f;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 h1,
