@@ -97,3 +97,10 @@ h6 {
   height: 710px;
   width: 100%;
 }
+
+.footer {
+  text-align: center;
+  margin-top: 1em;
+  background-color: #067bc2;
+  padding: 2em;
+}
