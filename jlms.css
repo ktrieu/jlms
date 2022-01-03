@@ -20,7 +20,7 @@ h6 {
   display: flex;
   justify-content: start;
   align-items: center;
-  border-bottom: 1px solid #067bc2;
+  border-bottom: 5px solid #067bc2;
 }
 
 .navbar-logo {
