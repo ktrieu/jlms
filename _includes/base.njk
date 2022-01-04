@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/jlms.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Lazeez Memorial Scholarship</title>
+    <!-- Link preview tags -->
+    <meta name="title" content="John Lazeez Memorial Scholarship" />
+    <meta
+      name="description"
+      content="Giving back, one Lazeez on the Rocks at a time."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://johnlazeez.com/" />
+    <meta property="og:title" content="John Lazeez Memorial Scholarship" />
+    <meta
+      property="og:description"
+      content="Giving back, one Lazeez on the Rocks at a time."
+    />
+    <meta
+      property="og:image"
+      content="https://johnlazeez.com/static/hero.png"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="top-navbar">
+      <div class="navbar-logo">
+        <a href="/">
+          <img src="/static/logo.svg" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/#story">STORY</a>
+        </li>
+        <li>
+          <a href="/#mission">MISSION</a>
+        </li>
+        <li>
+          <a href="/#apply">APPLY</a>
+        </li>
+      </ul>
+    </nav>
+    {% block content %} {% endblock %}
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        This website is not affiliated with Lazeez Shawarma. For more, see
+        <a href="/legal">our legal page.</a>
+      </p>
+      <p>A proud <a href="https://ugo-ii.com">UGO II</a> production.</p>
+    </footer>
+  </body>
+</html>
