@@ -1,0 +1,7 @@
+{% extends "base.njk" %}
+{% block content %}
+  <h1>News</h1>
+  {%- for item in collections.news -%}
+    <h3>{{ item.data.title }}</h3>
+  {%- endfor -%}
+{% endblock %}
