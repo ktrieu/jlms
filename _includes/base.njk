@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,33 +30,37 @@
     />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="top-navbar">
-      <div class="navbar-logo">
-        <a href="/">
-          <img src="/static/logo.svg" />
-        </a>
+    <div class="flex min-h-screen flex-col">
+      <!-- Navbar -->
+      <nav class="flex border-b-4 border-primary p-4">
+        <div class="flex-1">
+          <a href="/">
+            <img class="h-10" src="/static/logo.svg" />
+          </a>
+        </div>
+        <ul class="flex items-center">
+          <li class="px-3 text-xl hover:underline">
+            <a href="/#story">STORY</a>
+          </li>
+          <li class="px-3 text-xl hover:underline">
+            <a href="/#mission">MISSION</a>
+          </li>
+          <li class="px-3 text-xl hover:underline">
+            <a href="/#apply">APPLY</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="flex-1 mb-12">
+        {% block content %} {% endblock %}
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="/#story">STORY</a>
-        </li>
-        <li>
-          <a href="/#mission">MISSION</a>
-        </li>
-        <li>
-          <a href="/#apply">APPLY</a>
-        </li>
-      </ul>
-    </nav>
-    {% block content %} {% endblock %}
-    <!-- Footer -->
-    <footer class="footer">
-      <p>
-        This website is not affiliated with Lazeez Shawarma. For more, see
-        <a href="/legal">our legal page.</a>
-      </p>
-      <p>A proud <a href="https://ugo-ii.com">UGO II</a> production.</p>
-    </footer>
+      <!-- Footer -->
+      <footer class="bg-primary flex flex-col items-center">
+        <p class="my-3">
+          This website is not affiliated with Lazeez Shawarma. For more, see
+          <a class="underline" href="/legal">our legal page.</a>
+        </p>
+        <p class="my-3">A proud <a class="underline" href="https://ugo-ii.com">UGO II</a> production.</p>
+      </footer>
+    </div>
   </body>
 </html>
