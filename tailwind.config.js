@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Public\\ Sans", "sans-serif"],
-      serif: ["Prata", "serif"],
+      display: ["Prata", "serif"],
     },
     colors: {
       primary: "#067bc2",
