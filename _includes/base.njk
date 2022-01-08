@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html class="scroll-smooth">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prata&family=Public+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/jlms.css" rel="stylesheet" />
-    <link rel="icon" href="/static/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Public+Sans&display=swap" rel="stylesheet"/>
+    <link href="/jlms.css" rel="stylesheet"/>
+    <link rel="icon" href="/static/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>John Lazeez Memorial Scholarship</title>
     <!-- Link preview tags -->
-    <meta name="title" content="John Lazeez Memorial Scholarship" />
-    <meta
-      name="description"
-      content="Giving back, one Lazeez on the Rocks at a time."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://johnlazeez.com/" />
-    <meta property="og:title" content="John Lazeez Memorial Scholarship" />
-    <meta
-      property="og:description"
-      content="Giving back, one Lazeez on the Rocks at a time."
-    />
-    <meta
-      property="og:image"
-      content="https://johnlazeez.com/static/hero.png"
-    />
+    <meta name="title" content="John Lazeez Memorial Scholarship"/>
+    <meta name="description" content="Giving back, one Lazeez on the Rocks at a time."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://johnlazeez.com/"/>
+    <meta property="og:title" content="John Lazeez Memorial Scholarship"/>
+    <meta property="og:description" content="Giving back, one Lazeez on the Rocks at a time."/>
+    <meta property="og:image" content="https://johnlazeez.com/static/hero.png"/>
   </head>
   <body>
-    <div class="flex min-h-screen flex-col">
+    <div
+      class="flex min-h-screen flex-col">
       <!-- Navbar -->
       <nav class="flex border-b-4 border-primary p-4">
         <div class="flex-1">
           <a href="/">
-            <img class="h-10" src="/static/logo.svg" />
+            <img class="h-10" src="/static/logo.svg"/>
           </a>
         </div>
         <ul class="flex items-center">
+          <li class="px-3 text-xl">
+            <a class="no-underline hover:underline" href="/news">NEWS</a>
+          </li>
           <li class="px-3 text-xl">
             <a class="no-underline hover:underline" href="/#story">STORY</a>
           </li>
@@ -50,17 +42,18 @@
           </li>
         </ul>
       </nav>
-      <div class="flex-1 mb-12">
-        {% block content %} {% endblock %}
+      <div class="flex-1 mb-12"> {% block content %}{% endblock %}
+        </div>
+        <!-- Footer -->
+        <footer class="bg-primary flex flex-col items-center p-6">
+          <p class="text-center">
+            This website is not affiliated with Lazeez Shawarma. For more, see
+            <a href="/legal">our legal page.</a>
+          </p>
+          <p class="text-center">A proud
+            <a href="https://ugo-ii.com">UGO II</a>
+            production.</p>
+        </footer>
       </div>
-      <!-- Footer -->
-      <footer class="bg-primary flex flex-col items-center p-6">
-        <p class="text-center">
-          This website is not affiliated with Lazeez Shawarma. For more, see
-          <a href="/legal">our legal page.</a>
-        </p>
-        <p class="text-center">A proud <a href="https://ugo-ii.com">UGO II</a> production.</p>
-      </footer>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>

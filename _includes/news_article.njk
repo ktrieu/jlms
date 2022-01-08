@@ -1,0 +1,12 @@
+{% extends "base.njk" %}
+{% block content %}
+  <div class="max-w-sm lg:max-w-4xl mx-auto mt-8">
+    <a class="mb-6 block" href="/news">&#8592 Back to News</a>
+    <h3>{{ title }}</h3>
+    <p>
+      {{ page.date.toLocaleString() }}
+    </p>
+    <img src="{{ image }}"/>
+    <p>{{ content | safe }}</p>
+  </div>
+{% endblock %}
