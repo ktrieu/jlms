@@ -1,0 +1,19 @@
+{% extends "base.njk" %}
+{% block content %}
+  <div class="max-w-sm lg:max-w-4xl mx-auto mt-8">
+    <h1>Alumni:</h1>
+    {%- for term, alumnis in collections.alumni | sortGroupByTerm -%}
+      <h3 class="pb-3 border-b-2">{{ term }}</h3>
+      {%- for alumni in alumnis -%}
+        <div class="flex justify-evenly">
+          <div class="w-1/4">
+            <a href="{{ alumni.url }}" class="no-underline hover:underline text-primary">
+              <img class="mb-3" src="{{ alumni.data.image }}"/>
+              <h3 class="mx-auto w-fit">{{ alumni.data.name }}</h3>
+            </a>
+          </div>
+        </div>
+      {%- endfor -%}
+    {%- endfor -%}
+  </div>
+{% endblock %}
