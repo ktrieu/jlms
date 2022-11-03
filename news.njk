@@ -2,7 +2,7 @@
 {% block content %}
   <div class="max-w-sm lg:max-w-4xl mx-auto mt-8">
     <h1>News</h1>
-    {%- for item in collections.news -%}
+    {%- for item in collections.news | reverse -%}
       <a class="no-underline hover:underline decoration-primary" href="{{ item.url }}">
         <h3>{{ item.data.title }}</h3>
       </a>

@@ -42,4 +42,8 @@ module.exports = function (eleventyConfig) {
 
     return entries.reverse();
   });
+
+  eleventyConfig.addFilter("reverse", (values) => {
+    return [...values].reverse();
+  });
 };
