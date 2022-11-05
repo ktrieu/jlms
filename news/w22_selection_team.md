@@ -1,7 +1,7 @@
 ---
 tags: news
 title: Meet the Winter 2022 JLMS Selection Committee!
-date: Last Modified
+date: 2022-01-13
 image: /static/w22_selection_team.png
 layout: news_article.njk
 ---

@@ -1,7 +1,7 @@
 ---
 tags: news
 title: Fall 2022 Submissions Now Open!
-date: Last Modified
+date: 2022-11-04
 image: /static/logo.svg
 layout: news_article.njk
 ---

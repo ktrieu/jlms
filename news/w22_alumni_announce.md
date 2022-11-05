@@ -1,7 +1,7 @@
 ---
 tags: news
 title: Winter 2022 Alumni Announcement
-date: Last Modified
+date: 2022-11-03
 image: /static/tendstofortytwo.png
 layout: news_article.njk
 ---
